@@ -5,6 +5,8 @@
 #              	about your product. Accepts arguments of machine serial numbers.
 # Edit:		This is a fork @glarizza's script:
 # 		https://github.com/huronschools/scripts/blob/master/ruby/warranty.rb
+# Edit:   This is a fork of @chilcote's script:
+#     https://github.com/chilcote/warranty/blob/master/warranty.rb
 
 require 'open-uri'
 require "osx/cocoa"
@@ -40,10 +42,10 @@ def get_warranty(serial)
   
   myfile = 'appwarranty.plist'
   my_dict = OSX::NSMutableDictionary.dictionary
-  my_dict['Product Decription'] = "#{hash['PROD_DESCR']}"
-  my_dict['Purchase date'] = "#{hash['PURCHASE_DATE'].gsub("-",".")}"
+  my_dict['Product Decription'] = hash['PROD_DESCR']
+  my_dict['Purchase date'] = hash['PURCHASE_DATE'].gsub("-",".")
   my_dict['Coverage end'] = (!hash['COV_END_DATE'].empty?) ? "#{hash['COV_END_DATE'].gsub("-",".")}" : "EXPIRED"
-  my_dict['ASD version'] = "#{asd_hash[hash['PROD_DESCR']].gsub("\n","")}"
+  my_dict['ASD version'] = asd_hash[hash['PROD_DESCR']].chomp
   my_dict.writeToFile_atomically(myfile, true)
   pp my_dict
 
