@@ -15,7 +15,7 @@
 #
 sPIDLine=0
 GetPIDLine()
-{{
+{
 	# Use ps to get our process list then filter out only those matching $1
 	psLine="ps -axww | grep \"$1\" | sed -e '/grep/d'"
 	shift
@@ -36,13 +36,13 @@ GetPIDLine()
 #
 sPID=0
 GetPID()
-{{
+{
 	sPID=`echo "$1" | awk '{{print $1}'`
 }
 
 sAgentPIDLine=""
 GetAgentPIDLine()
-{{
+{
 	GetPIDLine "MacOS/BESAgent" "BESAgentUI" "BESAgentDaemon" "BESAgentControlPanel" "BESAgent Uninstaller"
 	sAgentPIDLine="$sPIDLine"
 }
@@ -126,6 +126,6 @@ rm -rf /Applications/TriggerBESClientUI.app
 # because the client files are missing or already deleted, passing the label
 # to the DockUtil remove command will still remove the item from the dock
 #
-dockUtilPath=`expr "$0" : '\(.*\)\/[^\/]*$'`
-"$dockUtilPath/DockUtil" -a remove "$clientLoc/BigFixSupportCenter.app" "BigFixSupportCenter"
-rm -rf /tmp/besclientuninstall.sh
+# dockUtilPath=`expr "$0" : '\(.*\)\/[^\/]*$'`
+# "$dockUtilPath/DockUtil" -a remove "$clientLoc/BigFixSupportCenter.app" "BigFixSupportCenter"
+# rm -rf /tmp/besclientuninstall.sh
