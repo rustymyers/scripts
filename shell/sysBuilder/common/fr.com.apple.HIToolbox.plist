@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AppleCurrentAsciiInputSource</key>
+	<dict>
+		<key>InputSourceKind</key>
+		<string>Keyboard Layout</string>
+		<key>KeyboardLayout ID</key>
+		<integer>1</integer>
+		<key>KeyboardLayout Name</key>
+		<string>French</string>
+	</dict>
+	<key>AppleCurrentInputSource</key>
+	<dict>
+		<key>InputSourceKind</key>
+		<string>Keyboard Layout</string>
+		<key>KeyboardLayout ID</key>
+		<integer>1</integer>
+		<key>KeyboardLayout Name</key>
+		<string>French</string>
+	</dict>
+	<key>AppleDateResID</key>
+	<dict>
+		<key>smRoman</key>
+		<integer>0</integer>
+	</dict>
+	<key>AppleDefaultInputMode</key>
+	<dict/>
+	<key>AppleEnabledInputMethodsOfClass</key>
+	<dict>
+		<key>cplt</key>
+		<array>
+			<string>Character Palette</string>
+			<string>Keyboard Viewer</string>
+		</array>
+		<key>dict</key>
+		<array>
+			<string>Dictionary Service</string>
+		</array>
+	</dict>
+	<key>AppleEnabledInputModes</key>
+	<array>
+		<array>
+			<string>com.apple.inputmethod.Roman</string>
+			<string>smJapanese</string>
+			<string>Ç±Ç∆Ç¶ÇË</string>
+		</array>
+		<array>
+			<string>com.apple.inputmethod.Japanese</string>
+			<string>smJapanese</string>
+			<string>Ç±Ç∆Ç¶ÇË</string>
+		</array>
+		<array>
+			<string>com.apple.inputmethod.Japanese.Katakana</string>
+			<string>smJapanese</string>
+			<string>Ç±Ç∆Ç¶ÇË</string>
+		</array>
+	</array>
+	<key>AppleEnabledInputSources</key>
+	<array>
+		<dict>
+			<key>InputSourceKind</key>
+			<string>Keyboard Layout</string>
+			<key>KeyboardLayout ID</key>
+			<integer>1</integer>
+			<key>KeyboardLayout Name</key>
+			<string>French</string>
+		</dict>
+		<dict>
+			<key>Bundle ID</key>
+			<string>com.apple.TCIM</string>
+			<key>Input Mode</key>
+			<string>com.apple.inputmethod.TradChinese.Hanin</string>
+			<key>InputSourceKind</key>
+			<string>Input Mode</string>
+		</dict>
+		<dict>
+			<key>Bundle ID</key>
+			<string>com.apple.TCIM</string>
+			<key>Input Mode</key>
+			<string>com.apple.inputmethod.TradChinese.Cangjie</string>
+			<key>InputSourceKind</key>
+			<string>Input Mode</string>
+		</dict>
+		<dict>
+			<key>Bundle ID</key>
+			<string>com.apple.TCIM</string>
+			<key>Input Mode</key>
+			<string>com.apple.inputmethod.TradChinese.Pinyin</string>
+			<key>InputSourceKind</key>
+			<string>Input Mode</string>
+		</dict>
+		<dict>
+			<key>Bundle ID</key>
+			<string>com.apple.TCIM</string>
+			<key>Input Mode</key>
+			<string>com.apple.inputmethod.TradChinese.Dayi</string>
+			<key>InputSourceKind</key>
+			<string>Input Mode</string>
+		</dict>
+		<dict>
+			<key>Bundle ID</key>
+			<string>com.apple.TCIM</string>
+			<key>Input Mode</key>
+			<string>com.apple.inputmethod.TradChinese.Jianyi</string>
+			<key>InputSourceKind</key>
+			<string>Input Mode</string>
+		</dict>
+		<dict>
+			<key>Bundle ID</key>
+			<string>com.apple.SCIM</string>
+			<key>Input Mode</key>
+			<string>com.apple.inputmethod.SimpChinese.WBX</string>
+			<key>InputSourceKind</key>
+			<string>Input Mode</string>
+		</dict>
+		<dict>
+			<key>Bundle ID</key>
+			<string>com.apple.SCIM</string>
+			<key>Input Mode</key>
+			<string>com.apple.inputmethod.SimpChinese.WBH</string>
+			<key>InputSourceKind</key>
+			<string>Input Mode</string>
+		</dict>
+		<dict>
+			<key>Bundle ID</key>
+			<string>com.apple.SCIM</string>
+			<key>Input Mode</key>
+			<string>com.apple.inputmethod.SimpChinese.ITABC</string>
+			<key>InputSourceKind</key>
+			<string>Input Mode</string>
+		</dict>
+		<dict>
+			<key>Bundle ID</key>
+			<string>com.apple.Kotoeri</string>
+			<key>Input Mode</key>
+			<string>com.apple.inputmethod.Japanese.lastname</string>
+			<key>InputSourceKind</key>
+			<string>Input Mode</string>
+		</dict>
+		<dict>
+			<key>Bundle ID</key>
+			<string>com.apple.Kotoeri</string>
+			<key>Input Mode</key>
+			<string>com.apple.inputmethod.Japanese.firstname</string>
+			<key>InputSourceKind</key>
+			<string>Input Mode</string>
+		</dict>
+		<dict>
+			<key>Bundle ID</key>
+			<string>com.apple.Kotoeri</string>
+			<key>Input Mode</key>
+			<string>com.apple.inputmethod.Japanese.placename</string>
+			<key>InputSourceKind</key>
+			<string>Input Mode</string>
+		</dict>
+		<dict>
+			<key>Bundle ID</key>
+			<string>com.apple.Kotoeri</string>
+			<key>Input Mode</key>
+			<string>com.apple.inputmethod.Japanese</string>
+			<key>InputSourceKind</key>
+			<string>Input Mode</string>
+		</dict>
+		<dict>
+			<key>Bundle ID</key>
+			<string>com.apple.Kotoeri</string>
+			<key>Input Mode</key>
+			<string>com.apple.inputmethod.Roman</string>
+			<key>InputSourceKind</key>
+			<string>Input Mode</string>
+		</dict>
+		<dict>
+			<key>Bundle ID</key>
+			<string>com.apple.Kotoeri</string>
+			<key>Input Mode</key>
+			<string>com.apple.inputmethod.Japanese.Katakana</string>
+			<key>InputSourceKind</key>
+			<string>Input Mode</string>
+		</dict>
+		<dict>
+			<key>Bundle ID</key>
+			<string>com.apple.HangulIM</string>
+			<key>Input Mode</key>
+			<string>com.apple.HangulIM.390Sebulshik</string>
+			<key>InputSourceKind</key>
+			<string>Input Mode</string>
+		</dict>
+		<dict>
+			<key>Bundle ID</key>
+			<string>com.apple.HangulIM</string>
+			<key>Input Mode</key>
+			<string>com.apple.HangulIM.3SetKorean</string>
+			<key>InputSourceKind</key>
+			<string>Input Mode</string>
+		</dict>
+		<dict>
+			<key>Bundle ID</key>
+			<string>com.apple.HangulIM</string>
+			<key>Input Mode</key>
+			<string>com.apple.HangulIM.2SetKorean</string>
+			<key>InputSourceKind</key>
+			<string>Input Mode</string>
+		</dict>
+		<dict>
+			<key>Bundle ID</key>
+			<string>com.apple.HangulIM</string>
+			<key>Input Mode</key>
+			<string>com.apple.HangulIM.GongjinCheongRomaja</string>
+			<key>InputSourceKind</key>
+			<string>Input Mode</string>
+		</dict>
+		<dict>
+			<key>Bundle ID</key>
+			<string>com.apple.HangulIM</string>
+			<key>Input Mode</key>
+			<string>com.apple.HangulIM.HNCRomaja</string>
+			<key>InputSourceKind</key>
+			<string>Input Mode</string>
+		</dict>
+		<dict>
+			<key>Bundle ID</key>
+			<string>com.apple.AnjalIM</string>
+			<key>Input Mode</key>
+			<string>com.apple.AnjalIM.AnjalIM</string>
+			<key>InputSourceKind</key>
+			<string>Input Mode</string>
+		</dict>
+		<dict>
+			<key>Bundle ID</key>
+			<string>com.apple.AnjalIM</string>
+			<key>Input Mode</key>
+			<string>com.apple.AnjalIM.Tamil99</string>
+			<key>InputSourceKind</key>
+			<string>Input Mode</string>
+		</dict>
+		<dict>
+			<key>InputSourceKind</key>
+			<string>Keyboard Layout</string>
+			<key>KeyboardLayout ID</key>
+			<integer>1111</integer>
+			<key>KeyboardLayout Name</key>
+			<string>French - numerical</string>
+		</dict>
+		<dict>
+			<key>InputSourceKind</key>
+			<string>Keyboard Layout</string>
+			<key>KeyboardLayout ID</key>
+			<integer>0</integer>
+			<key>KeyboardLayout Name</key>
+			<string>U.S.</string>
+		</dict>
+		<dict>
+			<key>Bundle ID</key>
+			<string>com.apple.CharacterPaletteIM</string>
+			<key>InputSourceKind</key>
+			<string>Non Keyboard Input Method</string>
+		</dict>
+		<dict>
+			<key>Bundle ID</key>
+			<string>com.apple.KeyboardViewer</string>
+			<key>InputSourceKind</key>
+			<string>Non Keyboard Input Method</string>
+		</dict>
+		<dict>
+			<key>Bundle ID</key>
+			<string>com.apple.DictionaryServiceComponent</string>
+			<key>InputSourceKind</key>
+			<string>Non Keyboard Input Method</string>
+		</dict>
+	</array>
+	<key>AppleItlbKeys</key>
+	<dict>
+		<key>smRoman</key>
+		<integer>1</integer>
+	</dict>
+	<key>AppleNumberResID</key>
+	<dict>
+		<key>smRoman</key>
+		<integer>0</integer>
+	</dict>
+	<key>ApplePreviousInputSource</key>
+	<dict>
+		<key>InputSourceKind</key>
+		<string>Keyboard Layout</string>
+		<key>KeyboardLayout ID</key>
+		<integer>0</integer>
+		<key>KeyboardLayout Name</key>
+		<string>U.S.</string>
+	</dict>
+	<key>AppleSelectedInputMethodsOfClass</key>
+	<dict/>
+	<key>AppleSelectedInputSources</key>
+	<array>
+		<dict>
+			<key>InputSourceKind</key>
+			<string>Keyboard Layout</string>
+			<key>KeyboardLayout ID</key>
+			<integer>1</integer>
+			<key>KeyboardLayout Name</key>
+			<string>French</string>
+		</dict>
+	</array>
+	<key>AppleTimeResID</key>
+	<dict>
+		<key>smRoman</key>
+		<integer>0</integer>
+	</dict>
+	<key>Keyboard Menu</key>
+	<dict>
+		<key>kcfg 0</key>
+		<data>
+		AAAAAD+sAAA/rQAAAAAAAQAPAAAAXAAAAAYAAABHAAAAAgAAAFAAAAAdAAAA
+		CQAAABoAAAARAAAAAQABBFcAAQADAAAAMgAAAAQAAADfAAAADAAAAAoAAAAI
+		AAAAVwAAAAcAAADgAAAAEgAAABMAAA==
+		</data>
+	</dict>
+</dict>
+</plist>

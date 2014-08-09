@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>NSRunningFromLaunchd</key>
+		<string>1</string>
+	</dict>
+	<key>Label</key>
+	<string>com.apple.pbs</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.pbs.fetch_services</key>
+		<true/>
+	</dict>
+	<key>WatchPaths</key>
+	<array>
+		<string>/Library/Services/</string>
+	</array>
+	<key>Program</key>
+        <string>/System/Library/CoreServices/pbs</string>
+        <key>LimitLoadToSessionType</key>
+        <string>Aqua</string>
+</dict>
+</plist>

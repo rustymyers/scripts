@@ -1,0 +1,137 @@
+#!/bin/sh
+
+# Check effective user id
+if [ ${EUID} -ne 0 ]
+then
+  echo "You must run this script as the root user."
+  exit 1
+fi
+
+# Check system version
+SYS_NAME=`sw_vers -productName`
+SYS_VERS=`sw_vers -productVersion | awk -F. '{ print $2 }'`
+if [ "${SYS_NAME}" != "Mac OS X" ] || [ ${SYS_VERS} -lt 5 ]
+then
+  echo "This script requires Mac OS X Client 10.5 or later."
+  exit 1
+fi
+
+# Defaults
+ENABLE_DHCP=NO
+
+# Retain valid network interfaces in passed arguments
+INTERFACES=()
+for P in "${@}"
+do
+  ifconfig ${P} &>/dev/null
+  if [ ${?} -eq 0 ]
+  then
+    INTERFACES[${#INTERFACES[*]}]="${P}"
+  fi
+done
+if [ ${#INTERFACES[*]} -lt 1 ]
+then
+  INTERFACES[0]=en0
+fi
+
+# Disable services
+launchctl unload /System/Library/LaunchDaemons/tftp.plist 2>/dev/null
+launchctl unload /System/Library/LaunchDaemons/bootps.plist 2>/dev/null
+
+# Create NetBoot root folders
+if [ ! -d /Library/NetBoot ]
+then
+  mkdir /Library/NetBoot
+  mkdir /Library/NetBoot/NetBootSP0
+  mkdir /Library/NetBoot/NetBootClients0
+  chown -R root:admin /Library/NetBoot
+  chmod -R 775 /Library/NetBoot
+fi
+
+if [ ! -e /Library/NetBoot/.sharepoint ]
+then
+  cd /Library/NetBoot
+  ln -s NetBootSP0 /Library/NetBoot/.sharepoint
+fi
+
+if [ ! -e /Library/NetBoot/.clients ]
+then
+  cd /Library/NetBoot
+  ln -s NetBootClients0 /Library/NetBoot/.clients
+fi
+
+# Create tftp root folders for NetBoot
+if [ ! -d /private/tftpboot/NetBoot ]
+then
+  mkdir /private/tftpboot/NetBoot
+  ln -s /Library/NetBoot/NetBootSP0 /private/tftpboot/NetBoot
+fi
+
+# Configure bootpd service
+/usr/libexec/PlistBuddy -c "Delete :detect_other_dhcp_server" /etc/bootpd.plist 2>/dev/null
+/usr/libexec/PlistBuddy -c "Add :detect_other_dhcp_server bool true" /etc/bootpd.plist 2>/dev/null
+/usr/libexec/PlistBuddy -c "Delete :dhcp_enabled" /etc/bootpd.plist 2>/dev/null
+/usr/libexec/PlistBuddy -c "Add :dhcp_enabled array" /etc/bootpd.plist 2>/dev/null
+/usr/libexec/PlistBuddy -c "Delete :bootp_enabled" /etc/bootpd.plist 2>/dev/null
+/usr/libexec/PlistBuddy -c "Add :bootp_enabled bool false" /etc/bootpd.plist 2>/dev/null
+
+/usr/libexec/PlistBuddy -c "Delete :netboot_enabled" /etc/bootpd.plist 2>/dev/null
+/usr/libexec/PlistBuddy -c "Add :netboot_enabled array" /etc/bootpd.plist
+/usr/libexec/PlistBuddy -c "Delete :old_netboot_enabled" /etc/bootpd.plist 2>/dev/null
+/usr/libexec/PlistBuddy -c "Add :old_netboot_enabled array" /etc/bootpd.plist
+/usr/libexec/PlistBuddy -c "Delete :reply_threshold_seconds" /etc/bootpd.plist 2>/dev/null
+/usr/libexec/PlistBuddy -c "Add :reply_threshold_seconds integer 0" /etc/bootpd.plist
+
+IDX=0
+while [ ${IDX} -lt ${#INTERFACES[@]} ]
+do
+	/usr/libexec/PlistBuddy -c "Add :netboot_enabled:${IDX} string ${INTERFACES[$IDX]}" /etc/bootpd.plist
+	/usr/libexec/PlistBuddy -c "Add :old_netboot_enabled:${IDX} string ${INTERFACES[$IDX]}" /etc/bootpd.plist
+    if [ "${ENABLE_DHCP}" = "YES" ]
+	then
+		/usr/libexec/PlistBuddy -c "Add :dhcp_enabled:${IDX} string ${INTERFACES[$IDX]}" /etc/bootpd.plist
+	fi
+	IDX=`expr ${IDX} + 1`
+done
+
+/usr/libexec/PlistBuddy -c "Add :Subnets array" /etc/bootpd.plist 2>/dev/null
+if [ ${?} -eq 0 ]
+then
+  # Minimal set
+  /usr/libexec/PlistBuddy -c "Add :Subnets:0 dict" /etc/bootpd.plist
+  /usr/libexec/PlistBuddy -c "Add :Subnets:0:allocate bool true" /etc/bootpd.plist
+  /usr/libexec/PlistBuddy -c "Add :Subnets:0:name string 192.168.0/24" /etc/bootpd.plist
+  /usr/libexec/PlistBuddy -c "Add :Subnets:0:net_address string 192.168.0.0" /etc/bootpd.plist
+  /usr/libexec/PlistBuddy -c "Add :Subnets:0:net_mask string 255.255.255.0" /etc/bootpd.plist
+  /usr/libexec/PlistBuddy -c "Add :Subnets:0:net_range array" /etc/bootpd.plist
+  /usr/libexec/PlistBuddy -c "Add :Subnets:0:net_range:0 string 192.168.0.100" /etc/bootpd.plist
+  /usr/libexec/PlistBuddy -c "Add :Subnets:0:net_range:1 string 192.168.0.150" /etc/bootpd.plist
+  # Extra information
+  /usr/libexec/PlistBuddy -c "Add :Subnets:0:dhcp_router string 192.168.0.254" /etc/bootpd.plist
+  /usr/libexec/PlistBuddy -c "Add :Subnets:0:dhcp_domain_name string example.com" /etc/bootpd.plist
+  /usr/libexec/PlistBuddy -c "Add :Subnets:0:dhcp_domain_name_server array" /etc/bootpd.plist
+  /usr/libexec/PlistBuddy -c "Add :Subnets:0:dhcp_domain_name_server:0 string 192.168.0.254" /etc/bootpd.plist
+  /usr/libexec/PlistBuddy -c "Add :Subnets:0:dhcp_domain_search array" /etc/bootpd.plist
+  /usr/libexec/PlistBuddy -c "Add :Subnets:0:dhcp_domain_search:0 string example.com" /etc/bootpd.plist
+  /usr/libexec/PlistBuddy -c "Add :Subnets:0:lease_min integer 3600" /etc/bootpd.plist
+  /usr/libexec/PlistBuddy -c "Add :Subnets:0:lease_max integer 3600" /etc/bootpd.plist
+fi
+
+# Configure tftpd service
+/usr/libexec/PlistBuddy -c "Set :ProgramArguments:1 -i" /System/Library/LaunchDaemons/tftp.plist
+
+# Enable NFS daemon
+NFS_READY=`grep NetBootSP0 /etc/exports 2>/dev/null | wc -l`
+if [ ${NFS_READY} -lt 1 ]
+then
+  echo "/Library/NetBoot/NetBootSP0 -ro -maproot=root" >> /etc/exports
+  echo "/Library/NetBoot/NetBootClients0 -ro -maproot=root" >> /etc/exports
+fi
+
+# Enable tftpd service
+launchctl load -w /System/Library/LaunchDaemons/tftp.plist 
+
+# Enable bootpd service
+launchctl load -w /System/Library/LaunchDaemons/bootps.plist 
+
+exit 0

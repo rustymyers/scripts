@@ -1,0 +1,123 @@
+#!/bin/sh
+# $Id: rc.install,v 1.13 2007/09/06 18:54:38 pmb Exp $
+# Copyright 2000-2007, Apple Inc.
+# pmb
+
+#
+# Disable prebinding-on-the-fly while we're CD booted
+#
+export DYLD_NO_FIX_PREBINDING=1
+
+#
+# Set default power management policy for the Install CD
+#
+(sleep 30; /usr/bin/pmset force -a sleep 0 displaysleep __DISPLAY_SLEEP__ lessbright 0 powerbutton 0 disksleep 0 ) &
+
+##
+## DEPLOYSTUDIO startup
+##
+
+#DEBUG_MODE=true
+DEBUG_MODE=false
+
+echo "rc.install (netboot=$NETBOOT, debug=$DEBUG_MODE)"
+
+#
+# Load custom environment variables
+#
+if [ -e /etc/deploystudio-env.conf ]
+then
+  . /etc/deploystudio-env.conf
+fi
+
+#
+# Wait for network services to be available
+#
+echo "Checking default route..."
+ATTEMPTS=0
+MAX_ATTEMPTS=12
+while ! (netstat -rn -f inet | grep -q default)
+do
+  if [ ${ATTEMPTS} -le ${MAX_ATTEMPTS} ]
+  then
+    echo "Waiting for the default route to be active..."
+    sleep 5
+	ATTEMPTS=`expr ${ATTEMPTS} + 1`
+  else
+    echo "Network not configured, skipping test..." 2>&1
+	break
+  fi
+done
+
+#
+# Enable display mirroring
+#
+/usr/bin/enableDisplayMirroring &
+
+#
+# Fix system date
+#
+if [ -e /Library/Preferences/ntpserver.txt ]
+then
+  NTP_SERVER=`cat /Library/Preferences/ntpserver.txt`
+
+  ping -c 1 -n -t 10 "${NTP_SERVER}"
+  if [ ${?} -eq 0 ]
+  then
+    ntpdate "${NTP_SERVER}" 2>/dev/null
+  fi
+fi
+
+#
+# Launch a VNC server
+#
+if [ -e /etc/ScreenSharing.launchd ]
+then
+  if [ -e /Library/Preferences/com.osxvnc.txt ]
+  then
+    launchctl load /System/Library/LaunchAgents/com.vineserver.osxvnc.plist 2>/dev/null
+  elif [ -e /Library/Preferences/com.apple.VNCSettings.txt ]
+  then
+    launchctl load /System/Library/LaunchAgents/com.apple.ScreenSharing 2>/dev/null
+  fi
+fi
+
+#
+# Launch DeployStudio Runtime
+#
+DS_APP="/Applications/Utilities/DeployStudio Admin.app/Contents/Resources/DeployStudio Runtime.app/Contents/MacOS/DeployStudio Runtime"
+DS_PARAMS=--netboot
+if [ -x "$DS_APP" ]
+then
+  #/usr/bin/say "Welcome to DeployStudio..."
+  if [ -e /Applications/AdViewer.app/Contents/MacOS/AdViewer ]
+  then
+    /Applications/AdViewer.app/Contents/MacOS/AdViewer &
+  fi
+  "$DS_APP" $DS_PARAMS
+  if [ $? != 0 ]
+  then
+    "$DS_APP" $DS_PARAMS
+  fi
+fi
+kill `ps -axww | awk '/AdViewer/ {print $1}'` 2>/dev/null
+kill `ps -axww | awk '/enableDisplayMirroring/ {print $1}'` 2>/dev/null
+
+#
+# Launch a shell (debug mode only)
+#
+if [ "_$DEBUG_MODE" = "_true" ]
+then
+  kill `ps -axww | awk '/Window[S]erver/ {print $1}'`
+  [ -x "/bin/sh" ] && "/bin/sh"
+fi
+
+#
+# Shutdown instead of rebooting if the flag is set
+#
+if [ -e /tmp/dss-shutdown ]
+then
+  /sbin/shutdown -h now
+else
+  /sbin/reboot
+fi

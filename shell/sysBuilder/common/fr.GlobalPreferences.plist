@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AppleLanguages</key>
+	<array>
+		<string>French</string>
+		<string>English</string>
+	</array>
+	<key>ColorSyncDevices</key>
+	<dict>
+		<key>DefaultDevice-mntr</key>
+		<integer>69665920</integer>
+		<key>Device-mntr69665920</key>
+		<dict>
+			<key>DefaultProfileID</key>
+			<integer>1</integer>
+			<key>DeviceFactoryProfiles</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>ProfileLocType</key>
+					<integer>5</integer>
+					<key>ProfileLocURL</key>
+					<string>file://localhost/Library/ColorSync/Profiles/Displays/Color%20LCD-4270480.icc</string>
+					<key>ProfileName</key>
+					<dict>
+						<key>en_US</key>
+						<string>Color LCD</string>
+						<key>fr_FR</key>
+						<string>Écran à cristaux liquides couleur</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>DeviceName</key>
+			<dict>
+				<key>en_US</key>
+				<string>Color LCD</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>Country</key>
+	<string>FR</string>
+	<key>com.apple.AppleModemSettingTool.LastCountryCode</key>
+	<string>US</string>
+	<key>com.apple.TimeZonePref.Last_Selected_City</key>
+	<array>
+		<string>48.866650</string>
+		<string>2.333328</string>
+		<string>12</string>
+		<string>Europe/Paris</string>
+		<string>FR</string>
+		<string>Paris</string>
+		<string>France</string>
+		<string>Paris</string>
+		<string>France</string>
+	</array>
+	<key>com.apple.audio.CoreAudio.DeviceSettings.AppleDBDMAAudioDMAEngine:0</key>
+	<dict>
+		<key>device 'isub' control on output channel 0</key>
+		<integer>1</integer>
+		<key>device 'mute' control on output channel 0</key>
+		<integer>0</integer>
+		<key>device 'ssrc' control on input channel 0</key>
+		<integer>1768778083</integer>
+		<key>device 'ssrc' control on output channel 0</key>
+		<integer>1769173099</integer>
+		<key>device 'volm' control on input channel 1</key>
+		<real>0.5</real>
+		<key>device 'volm' control on input channel 2</key>
+		<real>0.5</real>
+		<key>device 'volm' control on output channel 1</key>
+		<real>0.54759997129440308</real>
+		<key>device 'volm' control on output channel 2</key>
+		<real>0.54759997129440308</real>
+		<key>physical format for input stream 0</key>
+		<dict>
+			<key>bits per channel</key>
+			<integer>16</integer>
+			<key>bytes per frame</key>
+			<integer>4</integer>
+			<key>bytes per packet</key>
+			<integer>4</integer>
+			<key>channels per frame</key>
+			<integer>2</integer>
+			<key>format flags</key>
+			<integer>30</integer>
+			<key>format id</key>
+			<integer>1819304813</integer>
+			<key>frames per packet</key>
+			<integer>1</integer>
+			<key>sample rate</key>
+			<real>44100</real>
+		</dict>
+		<key>physical format for output stream 0</key>
+		<dict>
+			<key>bits per channel</key>
+			<integer>16</integer>
+			<key>bytes per frame</key>
+			<integer>4</integer>
+			<key>bytes per packet</key>
+			<integer>4</integer>
+			<key>channels per frame</key>
+			<integer>2</integer>
+			<key>format flags</key>
+			<integer>30</integer>
+			<key>format id</key>
+			<integer>1819304813</integer>
+			<key>frames per packet</key>
+			<integer>1</integer>
+			<key>sample rate</key>
+			<real>44100</real>
+		</dict>
+	</dict>
+</dict>
+</plist>

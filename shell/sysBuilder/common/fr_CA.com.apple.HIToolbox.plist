@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AppleCurrentAsciiInputSource</key>
+	<dict>
+		<key>InputSourceKind</key>
+		<string>Keyboard Layout</string>
+		<key>KeyboardLayout ID</key>
+		<integer>0</integer>
+		<key>KeyboardLayout Name</key>
+		<string>U.S.</string>
+	</dict>
+	<key>AppleCurrentInputSource</key>
+	<dict>
+		<key>InputSourceKind</key>
+		<string>Keyboard Layout</string>
+		<key>KeyboardLayout ID</key>
+		<integer>0</integer>
+		<key>KeyboardLayout Name</key>
+		<string>U.S.</string>
+	</dict>
+	<key>AppleDateResID</key>
+	<dict>
+		<key>smRoman</key>
+		<integer>1</integer>
+	</dict>
+	<key>AppleDefaultInputMethodOfClass</key>
+	<dict>
+		<key>inpm</key>
+		<dict>
+			<key>smJapanese</key>
+			<array>
+				<string>Ç±Ç∆Ç¶ÇË</string>
+				<string>...tsvcinpmappl</string>
+				<integer>33035</integer>
+			</array>
+			<key>smKorean</key>
+			<array>
+				<string>∆ƒøˆ ¿‘∑¬±‚</string>
+				<string>...tsvcinpmappl</string>
+				<integer>33559</integer>
+			</array>
+			<key>smSimpChinese</key>
+			<array>
+				<string>ºÚÃÂ÷–Œƒ</string>
+				<string>...tsvcinpmappl</string>
+				<integer>39201</integer>
+			</array>
+			<key>smTradChinese</key>
+			<array>
+				<string>¡c≈È§§§Â</string>
+				<string>...tsvcinpmappl</string>
+				<integer>33299</integer>
+			</array>
+		</dict>
+	</dict>
+	<key>AppleEnabledInputMethodsOfClass</key>
+	<dict>
+		<key>cplt</key>
+		<array>
+			<string>Keyboard Viewer</string>
+			<string>Character Palette</string>
+		</array>
+		<key>dict</key>
+		<array>
+			<string>Dictionary Service</string>
+		</array>
+	</dict>
+	<key>AppleEnabledInputSources</key>
+	<array>
+		<dict>
+			<key>InputSourceKind</key>
+			<string>Keyboard Layout</string>
+			<key>KeyboardLayout ID</key>
+			<integer>0</integer>
+			<key>KeyboardLayout Name</key>
+			<string>U.S.</string>
+		</dict>
+		<dict>
+			<key>InputSourceKind</key>
+			<string>Keyboard Layout</string>
+			<key>KeyboardLayout ID</key>
+			<integer>1</integer>
+			<key>KeyboardLayout Name</key>
+			<string>French</string>
+		</dict>
+		<dict>
+			<key>Bundle ID</key>
+			<string>com.apple.DictionaryServiceComponent</string>
+			<key>InputSourceKind</key>
+			<string>Non Keyboard Input Method</string>
+		</dict>
+		<dict>
+			<key>InputSourceKind</key>
+			<string>Keyboard Layout</string>
+			<key>KeyboardLayout ID</key>
+			<integer>80</integer>
+			<key>KeyboardLayout Name</key>
+			<string>Canadian - CSA</string>
+		</dict>
+	</array>
+	<key>AppleInputSourceHistory</key>
+	<array>
+		<dict>
+			<key>InputSourceKind</key>
+			<string>Keyboard Layout</string>
+			<key>KeyboardLayout ID</key>
+			<integer>80</integer>
+			<key>KeyboardLayout Name</key>
+			<string>Canadian - CSA</string>
+		</dict>
+		<dict>
+			<key>InputSourceKind</key>
+			<string>Keyboard Layout</string>
+			<key>KeyboardLayout ID</key>
+			<integer>1</integer>
+			<key>KeyboardLayout Name</key>
+			<string>French</string>
+		</dict>
+		<dict>
+			<key>InputSourceKind</key>
+			<string>Keyboard Layout</string>
+			<key>KeyboardLayout ID</key>
+			<integer>0</integer>
+			<key>KeyboardLayout Name</key>
+			<string>U.S.</string>
+		</dict>
+	</array>
+	<key>AppleItlbKeys</key>
+	<dict>
+		<key>smRoman</key>
+		<integer>0</integer>
+	</dict>
+	<key>AppleItlbSort</key>
+	<dict>
+		<key>smRoman</key>
+		<integer>0</integer>
+	</dict>
+	<key>AppleNumberResID</key>
+	<dict>
+		<key>smRoman</key>
+		<integer>1</integer>
+	</dict>
+	<key>ApplePreviousInputSource</key>
+	<dict>
+		<key>InputSourceKind</key>
+		<string>Keyboard Layout</string>
+		<key>KeyboardLayout ID</key>
+		<integer>1</integer>
+		<key>KeyboardLayout Name</key>
+		<string>French</string>
+	</dict>
+	<key>AppleSelectedInputMethodsOfClass</key>
+	<dict/>
+	<key>AppleSelectedInputSources</key>
+	<array>
+		<dict>
+			<key>InputSourceKind</key>
+			<string>Keyboard Layout</string>
+			<key>KeyboardLayout ID</key>
+			<integer>80</integer>
+			<key>KeyboardLayout Name</key>
+			<string>Canadian - CSA</string>
+		</dict>
+	</array>
+	<key>AppleTimeResID</key>
+	<dict>
+		<key>smRoman</key>
+		<integer>1</integer>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UserName</key>
+	<string>_trustevaluationagent</string>
+	<key>GroupName</key>
+	<string>_trustevaluationagent</string>
+	<key>OnDemand</key>
+	<true/>
+	<key>Label</key>
+	<string>com.apple.TrustEvaluationAgent.system</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.TrustEvaluationAgent</key>
+		<true/>
+	</dict>
+	<key>Program</key>
+	<string>/System/Library/PrivateFrameworks/TrustEvaluationAgent.framework/Resources/trustevaluationagent</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>trustevaluationagent</string>
+	</array>
+</dict>
+</plist>

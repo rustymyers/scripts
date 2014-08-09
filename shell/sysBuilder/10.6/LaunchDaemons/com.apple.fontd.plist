@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.apple.fontd</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.FontObjectsServer</key>
+		<true/>
+		<key>com.apple.FontServer</key>
+		<true/>
+	</dict>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/System/Library/Frameworks/ApplicationServices.framework/Frameworks/ATS.framework/Support/fontd</string>
+	</array>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>UserName</key>
+	<string>_atsserver</string>
+	<key>GroupName</key>
+	<string>_atsserver</string>
+</dict>
+</plist>

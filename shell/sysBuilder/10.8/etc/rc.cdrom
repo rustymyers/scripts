@@ -1,0 +1,117 @@
+#!/bin/sh
+# Copyright 2000-2009, Apple Inc.
+
+#
+#
+# NOTICE! 
+# Most of rc.cdrom is in rc.install temporarily while portions are migrated to launchd
+#
+#
+
+#
+# Disable prebinding-on-the-fly while we're CD booted
+#
+export DYLD_NO_FIX_PREBINDING=1
+
+#
+# 8712081 
+#
+export XTYPE_IGNORE_SERVER=1
+
+#
+# mount root_device to update vnode information
+#
+mount -u -o ro /
+
+#
+# Sanity check date & time. Pin to 4/1/1976.
+#
+if [ `date +%s` -lt 197193600 ]; then
+  date 040100001976
+fi
+
+#
+# Create a RAM disk with same perms as mountpoint
+#
+RAMDisk()
+{
+  mntpt=$1
+  rdsize=$2
+  echo "Creating RAM Disk for $mntpt"
+  dev=`hdik -drivekey system-image=yes -nomount ram://$rdsize`
+  if [ $? -eq 0 ] ; then
+    newfs_hfs $dev
+    # save & restore fs permissions covered by the mount
+    eval `/usr/bin/stat -s $mntpt`
+    mount -t hfs -o union -o nobrowse $dev $mntpt
+    chown $st_uid:$st_gid $mntpt
+    chmod $st_mode $mntpt
+  fi
+}
+
+# create RAM disk for log files (system.log and kernel.log)
+#if sysctl kern.bootargs | grep -q "debug=" ; then
+#    RAMDisk /var/log 10240
+#fi
+RAMDisk /etc 4096
+
+RAMDisk /Volumes 2048
+RAMDisk /var/tmp 32768
+RAMDisk /var/run 4096
+
+RAMDisk /System/Installation 1024
+RAMDisk /System/Library/Caches 32768
+
+RAMDisk /var/db 4096
+RAMDisk /var/db/launchd.db/com.apple.launchd 2048
+RAMDisk /var/folders 12288
+RAMDisk /var/log 32768
+RAMDisk /var/root 8192
+RAMDisk /var/root/Library 4096
+RAMDisk /Library/ColorSync/Profiles/Displays 4096
+
+mkdir /var/root/Library/Keychains
+mkdir -m 1777 /var/db/mds
+
+RAMDisk /Library/Caches 65536
+RAMDisk	/Library/Preferences 4096
+RAMDisk	/Library/Preferences/SystemConfiguration 4096
+RAMDisk	/Library/PrivilegedHelperTools 4096
+RAMDisk /Library/Keychains 2048
+
+# use or create the boot cache playlist, and allow B&I to force 32-bit playlist generation
+FORCETHIRTYTWO="false"
+if sysctl kern.bootargs | grep -q "no64exec" ; then
+	FORCETHIRTYTWO="true"
+fi
+
+SIXTYFOURBIT=`sysctl -n hw.cpu64bit_capable`
+
+if [ $SIXTYFOURBIT = "0" -o $FORCETHIRTYTWO = "true" ] ; then
+	echo "using 32-bit bootcache playlist"
+	BootCacheControl -f /var/db/BootCache.playlist32 start
+elif [ $SIXTYFOURBIT = "1" ] ; then
+	echo "using 64-bit bootcache playlist"
+	BootCacheControl -f /var/db/BootCache.playlist start
+fi
+
+#
+# Add a environment variable so people who need to know
+# they are running in the OS Install environment can know
+# without stating anything.
+#
+launchctl setenv __OSINSTALL_ENVIRONMENT 1
+launchctl setenv CI_DEFAULT_OPENCL_USAGE 0
+
+# 9594832
+if /usr/sbin/nvram recovery-boot-mode 2>&1 | /usr/bin/grep -e 'locked$' -e 'guest$' > /dev/null; then
+	launchctl setenv __OSINSTALL_GUEST_MODE 1
+fi
+
+# tell launchd to commence with loading the system.
+# for the OS Install environment only, /etc/rc.install is included in this process.
+launchctl load -D system
+
+# this script sleeps forever; the installer or startup disk will always reboot the system. 
+sleep 9999999
+

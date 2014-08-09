@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>TimeOut</key>
+	<integer>16</integer>
+	<key>ThrottleInterval</key>
+	<integer>0</integer>
+	<key>Label</key>
+	<string>com.apple.diskmanagementd</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.diskmanagementd</key>
+		<true/>
+	</dict>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/sbin/diskmanagementd</string>
+	</array>
+</dict>
+</plist>

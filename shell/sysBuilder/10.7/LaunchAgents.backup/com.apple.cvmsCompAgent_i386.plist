@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.apple.cvmsCompAgent_i386</string>
+	<key>HopefullyExitsLast</key>
+	<true/>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/CVMCompiler</string>
+		<string>1</string>
+	</array>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.cvmsCompAgent_i386</key>
+		<true/>
+	</dict>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>BinaryOrderPreference</key>
+	<array>
+		<integer>0x00000007</integer>
+	</array>
+	<key>LimitLoadToSessionType</key>
+	<string>Background</string>
+</dict>
+</plist>

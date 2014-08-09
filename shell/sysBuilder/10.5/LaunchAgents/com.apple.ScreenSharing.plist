@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+        <key>BinaryOrderPreference</key>
+        <array>
+                <integer>7</integer>
+                <integer>-1</integer>
+        </array>
+        <key>KeepAlive</key>
+        <dict>
+                <key>PathState</key>
+                <dict>
+                        <key>/Library/Preferences/com.apple.ScreenSharing.launchd</key>
+                        <true/>
+                </dict>
+        </dict>
+        <key>Label</key>
+        <string>com.apple.ScreenSharing.server</string>
+        <key>Program</key>
+        <string>/System/Library/CoreServices/RemoteManagement/AppleVNCServer.bundle/Contents/MacOS/AppleVNCServer</string>
+</dict>
+</plist>

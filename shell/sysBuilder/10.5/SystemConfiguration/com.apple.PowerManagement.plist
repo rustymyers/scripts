@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ActivePowerProfiles</key>
+	<dict>
+		<key>AC Power</key>
+		<integer>-1</integer>
+	</dict>
+	<key>Custom Profile</key>
+	<dict>
+		<key>AC Power</key>
+		<dict>
+			<key>Automatic Restart On Power Loss</key>
+			<integer>1</integer>
+			<key>Disk Sleep Timer</key>
+			<integer>0</integer>
+			<key>Display Sleep Timer</key>
+			<integer>0</integer>
+			<key>Display Sleep Uses Dim</key>
+			<integer>0</integer>
+			<key>System Sleep Timer</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.apple.xpchelper</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/libexec/xpchelper</string>
+	</array>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>MultipleInstances</key>
+	<true/>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.xpchelper</key>
+		<dict>
+			<key>ResetAtClose</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>ThrottleInterval</key>
+	<integer>0</integer>
+	<key>XPCDomainBootstrapper</key>
+	<true/>
+	<key>Disabled</key>
+	<true/>
+</dict>
+</plist>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>Label</key>
+	<string>com.apple.screensharing.agent</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/System/Library/CoreServices/RemoteManagement/ScreensharingAgent.bundle/Contents/MacOS/ScreensharingAgent</string>
+	</array>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.screensharing.agent</key>
+		<true/>
+	</dict>
+	<key>RunAtLoad</key>
+	<false/>
+	<key>WatchPaths</key>
+	<array>
+		<string>/private/etc/com.apple.screensharing.agent.launchd</string>
+	</array>
+	<key>ThrottleInterval</key>
+	<integer>1</integer>
+</dict>
+</plist>

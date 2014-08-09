@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>KeepAlive</key>
+	<dict>
+		<key>PathState</key>
+		<dict>
+			<key>/Library/Preferences/com.apple.applepushserviced.launchd</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>Label</key>
+	<string>com.apple.applepushserviced</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/System/Library/PrivateFrameworks/ApplePushService.framework/applepushserviced</string>
+	</array>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.applepushserviced</key>
+		<true/>
+	</dict>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>REACH_DARK_WAKE_NOTIFY</key>
+		<string>TRUE</string>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Inc.//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+        <key>Label</key>
+        <string>com.apple.taskgated</string>
+        <key>MachServices</key>
+        <dict>
+                <key>com.apple.taskgated</key>
+                <dict>
+                        <key>TaskSpecialPort</key>
+                        <integer>9</integer>
+                </dict>
+        </dict>
+        <key>ProgramArguments</key>
+        <array>
+                <string>/usr/libexec/taskgated</string>
+                <string>-s</string>
+        </array>
+</dict>
+</plist>

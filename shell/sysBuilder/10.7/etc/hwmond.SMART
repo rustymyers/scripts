@@ -1,0 +1,1163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Drives</key>
+	<array>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>1</integer>
+					<string>Read Error Rate</string>
+				</array>
+				<array>
+					<integer>3</integer>
+					<string>Spin-up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Re-allocated Sector Count</string>
+				</array>
+				<array>
+					<integer>7</integer>
+					<string>Seek Error Rate</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin-up Retry Count</string>
+				</array>
+				<array>
+					<integer>11</integer>
+					<string>Drive Calibration Retry Count</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>APPLE SSD SM128</string>
+			<key>manufacturerName</key>
+			<string>Apple</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>1</integer>
+					<string>Read Error Rate</string>
+				</array>
+				<array>
+					<integer>3</integer>
+					<string>Spin-up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Re-allocated Sector Count</string>
+				</array>
+				<array>
+					<integer>7</integer>
+					<string>Seek Error Rate</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin-up Retry Count</string>
+				</array>
+				<array>
+					<integer>11</integer>
+					<string>Drive Calibration Retry Count</string>
+				</array>
+				<array>
+					<integer>200</integer>
+					<string>Multi-zone Error Rate</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>WDC WD1002FBYS-43P1B0</string>
+			<key>manufacturerName</key>
+			<string>Western Digital</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>1</integer>
+					<string>Read Error Rate</string>
+				</array>
+				<array>
+					<integer>3</integer>
+					<string>Spin-up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Re-allocated Sector Count</string>
+				</array>
+				<array>
+					<integer>7</integer>
+					<string>Seek Error Rate</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin-up Retry Count</string>
+				</array>
+				<array>
+					<integer>11</integer>
+					<string>Drive Calibration Retry Count</string>
+				</array>
+				<array>
+					<integer>200</integer>
+					<string>Multi-zone Error Rate</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>WDC WD1602ABJS-43P5A0</string>
+			<key>manufacturerName</key>
+			<string>Western Digital</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>1</integer>
+					<string>Read Error Rate</string>
+				</array>
+				<array>
+					<integer>3</integer>
+					<string>Spin-up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Re-allocated Sector Count</string>
+				</array>
+				<array>
+					<integer>7</integer>
+					<string>Seek Error Rate</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin-up Retry Count</string>
+				</array>
+				<array>
+					<integer>11</integer>
+					<string>Drive Calibration Retry Count</string>
+				</array>
+				<array>
+					<integer>200</integer>
+					<string>Multi-zone Error Rate</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>WDC WD2500SB-01KBA0</string>
+			<key>manufacturerName</key>
+			<string>Western Digital</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>1</integer>
+					<string>Read Error Rate</string>
+				</array>
+				<array>
+					<integer>3</integer>
+					<string>Spin-up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Re-allocated Sector Count</string>
+				</array>
+				<array>
+					<integer>7</integer>
+					<string>Seek Error Rate</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin-up Retry Count</string>
+				</array>
+				<array>
+					<integer>11</integer>
+					<string>Drive Calibration Retry Count</string>
+				</array>
+				<array>
+					<integer>200</integer>
+					<string>Multi-zone Error Rate</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>WDC WD740GD-41FLC2</string>
+			<key>manufacturerName</key>
+			<string>Western Digital</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>3</integer>
+					<string>Spin Up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Reallocated Sector Count</string>
+				</array>
+				<array>
+					<integer>8</integer>
+					<string>Seek Time Performance</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin Retry Count</string>
+				</array>
+				<array>
+					<integer>11</integer>
+					<string>Calibration Retries</string>
+				</array>
+				<array>
+					<integer>203</integer>
+					<string>ECC Errors</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>Maxtor 7L250R0</string>
+			<key>manufacturerName</key>
+			<string>Maxtor</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>3</integer>
+					<string>Spin Up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Reallocated Sector Count</string>
+				</array>
+				<array>
+					<integer>8</integer>
+					<string>Seek Time Performance</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin Retry Count</string>
+				</array>
+				<array>
+					<integer>11</integer>
+					<string>Calibration Retries</string>
+				</array>
+				<array>
+					<integer>203</integer>
+					<string>ECC Errors</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>Maxtor 6Y080M0</string>
+			<key>manufacturerName</key>
+			<string>Maxtor</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>3</integer>
+					<string>Spin Up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Reallocated Sector Count</string>
+				</array>
+				<array>
+					<integer>8</integer>
+					<string>Seek Time Performance</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin Retry Count</string>
+				</array>
+				<array>
+					<integer>11</integer>
+					<string>Calibration Retries</string>
+				</array>
+				<array>
+					<integer>203</integer>
+					<string>ECC Errors</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>Maxtor 6L080M0</string>
+			<key>manufacturerName</key>
+			<string>Maxtor</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>3</integer>
+					<string>Spin Up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Reallocated Sector Count</string>
+				</array>
+				<array>
+					<integer>8</integer>
+					<string>Seek Time Performance</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin Retry Count</string>
+				</array>
+				<array>
+					<integer>11</integer>
+					<string>Calibration Retries</string>
+				</array>
+				<array>
+					<integer>203</integer>
+					<string>ECC Errors</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>Maxtor 7Y250M0</string>
+			<key>manufacturerName</key>
+			<string>Maxtor</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>3</integer>
+					<string>Spin Up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Reallocated Sector Count</string>
+				</array>
+				<array>
+					<integer>8</integer>
+					<string>Seek Time Performance</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin Retry Count</string>
+				</array>
+				<array>
+					<integer>11</integer>
+					<string>Calibration Retries</string>
+				</array>
+				<array>
+					<integer>203</integer>
+					<string>ECC Errors</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>Maxtor 6B080M0</string>
+			<key>manufacturerName</key>
+			<string>Maxtor</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>1</integer>
+					<string>Raw Read Error Rate</string>
+				</array>
+				<array>
+					<integer>2</integer>
+					<string>Throughput Performance</string>
+				</array>
+				<array>
+					<integer>3</integer>
+					<string>Spin Up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Reallocated Sector Count</string>
+				</array>
+				<array>
+					<integer>7</integer>
+					<string>Seek Error Rate</string>
+				</array>
+				<array>
+					<integer>8</integer>
+					<string>Seek Time Performance</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin Retry Count</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>Hitachi HUA722020ALA330</string>
+			<key>manufacturerName</key>
+			<string>Hitachi</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>1</integer>
+					<string>Raw Read Error Rate</string>
+				</array>
+				<array>
+					<integer>2</integer>
+					<string>Throughput Performance</string>
+				</array>
+				<array>
+					<integer>3</integer>
+					<string>Spin Up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Reallocated Sector Count</string>
+				</array>
+				<array>
+					<integer>7</integer>
+					<string>Seek Error Rate</string>
+				</array>
+				<array>
+					<integer>8</integer>
+					<string>Seek Time Performance</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin Retry Count</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>Hitachi HDS725050KLA360</string>
+			<key>manufacturerName</key>
+			<string>Hitachi</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>1</integer>
+					<string>Raw Read Error Rate</string>
+				</array>
+				<array>
+					<integer>2</integer>
+					<string>Throughput Performance</string>
+				</array>
+				<array>
+					<integer>3</integer>
+					<string>Spin Up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Reallocated Sector Count</string>
+				</array>
+				<array>
+					<integer>7</integer>
+					<string>Seek Error Rate</string>
+				</array>
+				<array>
+					<integer>8</integer>
+					<string>Seek Time Performance</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin Retry Count</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>Hitachi HDT722525DLAT80</string>
+			<key>manufacturerName</key>
+			<string>Hitachi</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>1</integer>
+					<string>Raw Read Error Rate</string>
+				</array>
+				<array>
+					<integer>2</integer>
+					<string>Throughput Performance</string>
+				</array>
+				<array>
+					<integer>3</integer>
+					<string>Spin Up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Reallocated Sector Count</string>
+				</array>
+				<array>
+					<integer>7</integer>
+					<string>Seek Error Rate</string>
+				</array>
+				<array>
+					<integer>8</integer>
+					<string>Seek Time Performance</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin Retry Count</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>Hitachi HDS725050KLAT80</string>
+			<key>manufacturerName</key>
+			<string>Hitachi</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>1</integer>
+					<string>Raw Read Error Rate</string>
+				</array>
+				<array>
+					<integer>2</integer>
+					<string>Throughput Performance</string>
+				</array>
+				<array>
+					<integer>3</integer>
+					<string>Spin Up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Reallocated Sector Count</string>
+				</array>
+				<array>
+					<integer>7</integer>
+					<string>Seek Error Rate</string>
+				</array>
+				<array>
+					<integer>8</integer>
+					<string>Seek Time Performance</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin Retry Count</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>Hitachi HDS724040KLSA80</string>
+			<key>manufacturerName</key>
+			<string>Hitachi</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>1</integer>
+					<string>Raw Read Error Rate</string>
+				</array>
+				<array>
+					<integer>2</integer>
+					<string>Throughput Performance</string>
+				</array>
+				<array>
+					<integer>3</integer>
+					<string>Spin Up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Reallocated Sector Count</string>
+				</array>
+				<array>
+					<integer>7</integer>
+					<string>Seek Error Rate</string>
+				</array>
+				<array>
+					<integer>8</integer>
+					<string>Seek Time Performance</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin Retry Count</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>Hitachi HDS722525VLSA80</string>
+			<key>manufacturerName</key>
+			<string>Hitachi</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>1</integer>
+					<string>Raw Read Error Rate</string>
+				</array>
+				<array>
+					<integer>2</integer>
+					<string>Throughput Performance</string>
+				</array>
+				<array>
+					<integer>3</integer>
+					<string>Spin Up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Reallocated Sector Count</string>
+				</array>
+				<array>
+					<integer>7</integer>
+					<string>Seek Error Rate</string>
+				</array>
+				<array>
+					<integer>8</integer>
+					<string>Seek Time Performance</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin Retry Count</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>Hitachi HDS722580VLSA80</string>
+			<key>manufacturerName</key>
+			<string>Hitachi</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>1</integer>
+					<string>Raw Read Error Rate</string>
+				</array>
+				<array>
+					<integer>2</integer>
+					<string>Throughput Performance</string>
+				</array>
+				<array>
+					<integer>3</integer>
+					<string>Spin Up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Reallocated Sector Count</string>
+				</array>
+				<array>
+					<integer>7</integer>
+					<string>Seek Error Rate</string>
+				</array>
+				<array>
+					<integer>8</integer>
+					<string>Seek Time Performance</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin Retry Count</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>Hitachi HDS722525VLAT80-1</string>
+			<key>manufacturerName</key>
+			<string>Hitachi</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>1</integer>
+					<string>Raw Read Error Rate</string>
+				</array>
+				<array>
+					<integer>2</integer>
+					<string>Throughput Performance</string>
+				</array>
+				<array>
+					<integer>3</integer>
+					<string>Spin Up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Reallocated Sector Count</string>
+				</array>
+				<array>
+					<integer>7</integer>
+					<string>Seek Error Rate</string>
+				</array>
+				<array>
+					<integer>8</integer>
+					<string>Seek Time Performance</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin Retry Count</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>Hitachi HDS721075KLA330</string>
+			<key>manufacturerName</key>
+			<string>Hitachi</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>1</integer>
+					<string>Raw Read Error Rate</string>
+				</array>
+				<array>
+					<integer>2</integer>
+					<string>Throughput Performance</string>
+				</array>
+				<array>
+					<integer>3</integer>
+					<string>Spin Up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Reallocated Sector Count</string>
+				</array>
+				<array>
+					<integer>7</integer>
+					<string>Seek Error Rate</string>
+				</array>
+				<array>
+					<integer>8</integer>
+					<string>Seek Time Performance</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin Retry Count</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>Hitachi HDS721010KLA330</string>
+			<key>manufacturerName</key>
+			<string>Hitachi</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>1</integer>
+					<string>Raw Read Error Rate</string>
+				</array>
+				<array>
+					<integer>2</integer>
+					<string>Throughput Performance</string>
+				</array>
+				<array>
+					<integer>3</integer>
+					<string>Spin Up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Reallocated Sector Count</string>
+				</array>
+				<array>
+					<integer>7</integer>
+					<string>Seek Error Rate</string>
+				</array>
+				<array>
+					<integer>8</integer>
+					<string>Seek Time Performance</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin Retry Count</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>IBM-IC35L040AVVA07-0</string>
+			<key>manufacturerName</key>
+			<string>IBM</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>1</integer>
+					<string>Raw Read Error Rate</string>
+				</array>
+				<array>
+					<integer>2</integer>
+					<string>Throughput Performance</string>
+				</array>
+				<array>
+					<integer>3</integer>
+					<string>Spin Up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Reallocated Sector Count</string>
+				</array>
+				<array>
+					<integer>7</integer>
+					<string>Seek Error Rate</string>
+				</array>
+				<array>
+					<integer>8</integer>
+					<string>Seek Time Performance</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin Retry Count</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>IBM-IC35L060AVVA07-0</string>
+			<key>manufacturerName</key>
+			<string>IBM</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>1</integer>
+					<string>Raw Read Error Rate</string>
+				</array>
+				<array>
+					<integer>2</integer>
+					<string>Throughput Performance</string>
+				</array>
+				<array>
+					<integer>3</integer>
+					<string>Spin Up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Reallocated Sector Count</string>
+				</array>
+				<array>
+					<integer>7</integer>
+					<string>Seek Error Rate</string>
+				</array>
+				<array>
+					<integer>8</integer>
+					<string>Seek Time Performance</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin Retry Count</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>IBM-IC35L120AVVA07-0</string>
+			<key>manufacturerName</key>
+			<string>IBM</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>1</integer>
+					<string>Raw Read Error Rate</string>
+				</array>
+				<array>
+					<integer>2</integer>
+					<string>Throughput Performance</string>
+				</array>
+				<array>
+					<integer>3</integer>
+					<string>Spin Up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Reallocated Sector Count</string>
+				</array>
+				<array>
+					<integer>7</integer>
+					<string>Seek Error Rate</string>
+				</array>
+				<array>
+					<integer>8</integer>
+					<string>Seek Time Performance</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin Retry Count</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>IBM-IC35L180AVV207-1</string>
+			<key>manufacturerName</key>
+			<string>IBM</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>1</integer>
+					<string>Raw Error Rate</string>
+				</array>
+				<array>
+					<integer>3</integer>
+					<string>Spin Up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Retired Sectors Count</string>
+				</array>
+				<array>
+					<integer>7</integer>
+					<string>Seek Error Rate</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin Retry Count</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>ST3400832AS</string>
+			<key>manufacturerName</key>
+			<string>Seagate</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>1</integer>
+					<string>Raw Error Rate</string>
+				</array>
+				<array>
+					<integer>3</integer>
+					<string>Spin Up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Retired Sectors Count</string>
+				</array>
+				<array>
+					<integer>7</integer>
+					<string>Seek Error Rate</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin Retry Count</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>ST360015A</string>
+			<key>manufacturerName</key>
+			<string>Seagate</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>1</integer>
+					<string>Raw Error Rate</string>
+				</array>
+				<array>
+					<integer>3</integer>
+					<string>Spin Up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Retired Sectors Count</string>
+				</array>
+				<array>
+					<integer>7</integer>
+					<string>Seek Error Rate</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin Retry Count</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>ST360014A</string>
+			<key>manufacturerName</key>
+			<string>Seagate</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>1</integer>
+					<string>Raw Error Rate</string>
+				</array>
+				<array>
+					<integer>3</integer>
+					<string>Spin Up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Retired Sectors Count</string>
+				</array>
+				<array>
+					<integer>7</integer>
+					<string>Seek Error Rate</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin Retry Count</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>ST3808110AS  PN</string>
+			<key>manufacturerName</key>
+			<string>Seagate</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>1</integer>
+					<string>Raw Error Rate</string>
+				</array>
+				<array>
+					<integer>3</integer>
+					<string>Spin Up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Retired Sectors Count</string>
+				</array>
+				<array>
+					<integer>7</integer>
+					<string>Seek Error Rate</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin Retry Count</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>ST3500641NS  P</string>
+			<key>manufacturerName</key>
+			<string>Seagate</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>1</integer>
+					<string>Raw Error Rate</string>
+				</array>
+				<array>
+					<integer>3</integer>
+					<string>Spin Up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Retired Sectors Count</string>
+				</array>
+				<array>
+					<integer>7</integer>
+					<string>Seek Error Rate</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin Retry Count</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>ST373455SS</string>
+			<key>manufacturerName</key>
+			<string>Seagate</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>1</integer>
+					<string>Raw Error Rate</string>
+				</array>
+				<array>
+					<integer>3</integer>
+					<string>Spin Up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Retired Sectors Count</string>
+				</array>
+				<array>
+					<integer>7</integer>
+					<string>Seek Error Rate</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin Retry Count</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>ST3300655SS</string>
+			<key>manufacturerName</key>
+			<string>Seagate</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>1</integer>
+					<string>Raw Error Rate</string>
+				</array>
+				<array>
+					<integer>3</integer>
+					<string>Spin Up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Retired Sectors Count</string>
+				</array>
+				<array>
+					<integer>7</integer>
+					<string>Seek Error Rate</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin Retry Count</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>ST3808110AS PN</string>
+			<key>manufacturerName</key>
+			<string>Seagate</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>1</integer>
+					<string>Raw Error Rate</string>
+				</array>
+				<array>
+					<integer>3</integer>
+					<string>Spin Up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Retired Sectors Count</string>
+				</array>
+				<array>
+					<integer>7</integer>
+					<string>Seek Error Rate</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin Retry Count</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>ST3750640NS P</string>
+			<key>manufacturerName</key>
+			<string>Seagate</string>
+		</dict>
+		<dict>
+			<key>SMART</key>
+			<array>
+				<array>
+					<integer>1</integer>
+					<string>Raw Error Rate</string>
+				</array>
+				<array>
+					<integer>3</integer>
+					<string>Spin Up Time</string>
+				</array>
+				<array>
+					<integer>5</integer>
+					<string>Retired Sectors Count</string>
+				</array>
+				<array>
+					<integer>7</integer>
+					<string>Seek Error Rate</string>
+				</array>
+				<array>
+					<integer>10</integer>
+					<string>Spin Retry Count</string>
+				</array>
+			</array>
+			<key>manufacturerID</key>
+			<string>ST380815AS N</string>
+			<key>manufacturerName</key>
+			<string>Seagate</string>
+		</dict>
+	</array>
+</dict>
+</plist>

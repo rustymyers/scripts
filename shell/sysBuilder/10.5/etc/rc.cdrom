@@ -1,0 +1,72 @@
+#!/bin/sh
+# $Id: rc.cdrom,v 1.92 2007/09/19 22:56:58 ddesmond Exp $
+# Copyright 2000-2007, Apple Inc.
+# pmb
+
+#
+#
+# NOTICE! 
+# Most of rc.cdrom is in rc.install temporarily while portions are migrated to launchd
+#
+#
+
+#
+# Disable prebinding-on-the-fly while we're CD booted
+#
+export DYLD_NO_FIX_PREBINDING=1
+
+#
+# mount root_device to update vnode information
+#
+mount -u -o ro /
+
+#
+# Sanity check date & time. Pin to 4/1/1976.
+#
+if [ `date +%s` -lt 197193600 ]; then
+  date 040100001976
+fi
+
+#
+# Create a RAM disk with same perms as mountpoint
+#
+RAMDisk()
+{
+  mntpt=$1
+  rdsize=$2
+  echo "Creating RAM Disk for $mntpt"
+  dev=`hdik -drivekey system-image=yes -nomount ram://$rdsize`
+  if [ $? -eq 0 ] ; then
+    newfs $dev
+    # save & restore fs permissions covered by the mount
+    eval `/usr/bin/stat -s $mntpt`
+    mount -o union -o nobrowse $dev $mntpt
+    chown $st_uid:$st_gid $mntpt
+    chmod $st_mode $mntpt
+  fi
+}
+
+RAMDisk /Volumes 1024
+RAMDisk /var/tmp 8192
+RAMDisk /var/run 256
+
+RAMDisk	/Library/Preferences 1024
+RAMDisk	/Library/Preferences/SystemConfiguration 1024
+RAMDisk /etc 1024
+RAMDisk /var/db 1024
+RAMDisk /var/log 8192
+RAMDisk /var/root 4096
+
+# language prefs -- read only until needed
+#RAMDisk	/Library/Preferences 256
+#mount -u -r -o union -o nobrowse /Library/Preferences
+
+mkdir -m 1777 /var/tmp/mds
+
+# all other Install DVD processes are started by launchd
+# one of those is /etc/rc.install
+launchctl load -D system
+
+# this script sleeps forever; rc.install will restart or shutdown
+sleep 9999999
+

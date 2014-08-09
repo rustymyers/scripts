@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.apple.authorizationhost</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/System/Library/CoreServices/SecurityAgent.app/Contents/Resources/authorizationhost</string>
+	</array>
+	<key>RunAtLoad</key>
+	<false/>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.authorizationhost</key>
+		<true/>
+	</dict>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>MultipleInstances</key>
+	<true/>
+	<key>ThrottleInterval</key>
+	<integer>0</integer>
+</dict>
+</plist>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BootFile</key>
+	<string>booter</string>
+	<key>BackwardCompatible</key>
+	<false/>
+	<key>IsDefault</key>
+	<false/>
+	<key>IsEnabled</key>
+	<true/>
+	<key>IsInstall</key>
+	<true/>
+	<key>Kind</key>
+	<integer>2</integer>
+	<key>RootPath</key>
+	<string>NetInstall.dmg</string>
+	<key>SupportsDiskless</key>
+	<false/>
+	<key>Type</key>
+	<string>NFS</string>
+</dict>
+</plist>

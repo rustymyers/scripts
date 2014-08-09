@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.apple.efilogin-helper</string>
+	
+	<key>UserName</key>
+	<string>root</string>
+	
+	<key>ProgramArguments</key>
+	<array>
+		<string>sandbox-exec</string>
+		<string>-n</string>
+		<string>/System/Library/PrivateFrameworks/EFILogin.framework/Resources/efilogin-helper.sb</string>
+		<string>/System/Library/PrivateFrameworks/EFILogin.framework/Resources/efilogin-helper</string>
+	</array>
+	
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.efilogin-helper</key>
+		<true/>
+	</dict>
+	
+	<key>EnableTransactions</key>
+	<true/>
+</dict>
+</plist>

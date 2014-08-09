@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AppleLanguages</key>
+	<array>
+		<string>German</string>
+		<string>English</string>
+		<string>French</string>
+	</array>
+	<key>ColorSyncDevices</key>
+	<dict>
+		<key>DefaultDevice-mntr</key>
+		<integer>69666816</integer>
+		<key>DefaultDevice-prtr</key>
+		<integer>61872391</integer>
+		<key>Device-mntr1535231424</key>
+		<dict>
+			<key>DefaultProfileID</key>
+			<integer>1</integer>
+			<key>DeviceProfiles</key>
+			<dict>
+				<key>1</key>
+				<dict/>
+			</dict>
+		</dict>
+		<key>Device-mntr1535231425</key>
+		<dict>
+			<key>DefaultProfileID</key>
+			<integer>1</integer>
+			<key>DeviceProfiles</key>
+			<dict>
+				<key>1</key>
+				<dict/>
+			</dict>
+		</dict>
+		<key>Device-mntr2059404217</key>
+		<dict>
+			<key>DefaultProfileID</key>
+			<integer>1</integer>
+		</dict>
+		<key>Device-mntr586327317</key>
+		<dict>
+			<key>DefaultProfileID</key>
+			<integer>1</integer>
+		</dict>
+		<key>Device-mntr685655873</key>
+		<dict>
+			<key>DefaultProfileID</key>
+			<integer>1</integer>
+		</dict>
+		<key>Device-mntr685658816</key>
+		<dict>
+			<key>DefaultProfileID</key>
+			<integer>1</integer>
+		</dict>
+		<key>Device-mntr685658817</key>
+		<dict>
+			<key>DefaultProfileID</key>
+			<integer>1</integer>
+		</dict>
+		<key>Device-mntr69502905</key>
+		<dict>
+			<key>DefaultProfileID</key>
+			<integer>1</integer>
+		</dict>
+		<key>Device-mntr69666816</key>
+		<dict>
+			<key>DefaultProfileID</key>
+			<integer>1</integer>
+			<key>DeviceFactoryProfiles</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>ProfileLocType</key>
+					<integer>5</integer>
+					<key>ProfileLocURL</key>
+					<string>file://localhost/Library/ColorSync/Profiles/Displays/Color%20LCD-4270800.icc</string>
+					<key>ProfileName</key>
+					<dict>
+						<key>da_DK</key>
+						<string>LCD-farveskærm</string>
+						<key>de_DE</key>
+						<string>Farb-LCD</string>
+						<key>en_US</key>
+						<string>Color LCD</string>
+						<key>es_ES</key>
+						<string>LCD color</string>
+						<key>fi_FI</key>
+						<string>Väri-LCD</string>
+						<key>fr_FR</key>
+						<string>Écran à cristaux liquides couleur</string>
+						<key>it_IT</key>
+						<string>LCD Colore</string>
+						<key>ja_JP</key>
+						<string>カラー LCD</string>
+						<key>ko_KR</key>
+						<string>컬러 LCD</string>
+						<key>nl_NL</key>
+						<string>Kleuren-LCD</string>
+						<key>no_NO</key>
+						<string>Farge-LCD</string>
+						<key>pt_PT</key>
+						<string>LCD colorido</string>
+						<key>sv_SE</key>
+						<string>Färg-LCD</string>
+						<key>zh_CN</key>
+						<string>彩色 LCD</string>
+						<key>zh_TW</key>
+						<string>彩色液晶顯示器</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>DeviceName</key>
+			<dict>
+				<key>da_DK</key>
+				<string>LCD-farveskærm</string>
+				<key>de_DE</key>
+				<string>Farb-LCD</string>
+				<key>en_US</key>
+				<string>Color LCD</string>
+				<key>es_ES</key>
+				<string>LCD color</string>
+				<key>fi_FI</key>
+				<string>Väri-LCD</string>
+				<key>fr_FR</key>
+				<string>Écran à cristaux liquides couleur</string>
+				<key>it_IT</key>
+				<string>LCD Colore</string>
+				<key>ja_JP</key>
+				<string>カラー LCD</string>
+				<key>ko_KR</key>
+				<string>컬러 LCD</string>
+				<key>nl_NL</key>
+				<string>Kleuren-LCD</string>
+				<key>no_NO</key>
+				<string>Farge-LCD</string>
+				<key>pt_PT</key>
+				<string>LCD colorido</string>
+				<key>sv_SE</key>
+				<string>Färg-LCD</string>
+				<key>zh_CN</key>
+				<string>彩色 LCD</string>
+				<key>zh_TW</key>
+				<string>彩色液晶顯示器</string>
+			</dict>
+		</dict>
+		<key>Device-prtr-1948597081</key>
+		<dict>
+			<key>DefaultProfileID</key>
+			<integer>164794677</integer>
+			<key>DeviceFactoryProfiles</key>
+			<dict>
+				<key>164794677</key>
+				<dict>
+					<key>ProfileLocType</key>
+					<integer>0</integer>
+					<key>ProfileName</key>
+					<dict>
+						<key>en</key>
+						<string>Gray</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>DeviceName</key>
+			<dict>
+				<key>en</key>
+				<string>Internes_Modem</string>
+			</dict>
+		</dict>
+		<key>Device-prtr1039845057</key>
+		<dict>
+			<key>DefaultProfileID</key>
+			<integer>-1057516797</integer>
+		</dict>
+		<key>Device-prtr1820255204</key>
+		<dict>
+			<key>DefaultProfileID</key>
+			<integer>164794677</integer>
+			<key>DeviceFactoryProfiles</key>
+			<dict>
+				<key>164794677</key>
+				<dict>
+					<key>ProfileLocType</key>
+					<integer>0</integer>
+					<key>ProfileName</key>
+					<dict>
+						<key>en</key>
+						<string>Gray</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>DeviceName</key>
+			<dict>
+				<key>en</key>
+				<string>Bluetooth-Modem</string>
+			</dict>
+		</dict>
+		<key>Device-prtr2140482741</key>
+		<dict>
+			<key>DefaultProfileID</key>
+			<integer>1261768892</integer>
+		</dict>
+		<key>Device-prtr506642580</key>
+		<dict>
+			<key>DefaultProfileID</key>
+			<integer>-1057516797</integer>
+		</dict>
+		<key>Device-prtr61872391</key>
+		<dict>
+			<key>DefaultProfileID</key>
+			<integer>1261768892</integer>
+			<key>DeviceFactoryProfiles</key>
+			<dict>
+				<key>1261768892</key>
+				<dict>
+					<key>ProfileLocType</key>
+					<integer>5</integer>
+					<key>ProfileLocURL</key>
+					<string>file://localhost/Library/Printers/hp/Profiles/sRGB_A.icc</string>
+					<key>ProfileName</key>
+					<dict>
+						<key>en</key>
+						<string>sRGB Matching Profile</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>DeviceName</key>
+			<dict>
+				<key>en</key>
+				<string>HP_CLJ_8500</string>
+			</dict>
+		</dict>
+		<key>Device-prtr967899738</key>
+		<dict>
+			<key>DefaultProfileID</key>
+			<integer>1261768892</integer>
+			<key>DeviceFactoryProfiles</key>
+			<dict>
+				<key>1261768892</key>
+				<dict>
+					<key>ProfileLocType</key>
+					<integer>5</integer>
+					<key>ProfileLocURL</key>
+					<string>file://localhost/Library/Printers/hp/Profiles/sRGB_A.icc</string>
+					<key>ProfileName</key>
+					<dict>
+						<key>en</key>
+						<string>sRGB Matching Profile</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>DeviceName</key>
+			<dict>
+				<key>en</key>
+				<string>HP_2100_Large_Account</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>Country</key>
+	<string>DE</string>
+	<key>EnergySaverPrefs</key>
+	<dict>
+		<key>LastACPowerCustomSettings</key>
+		<array>
+			<integer>16</integer>
+			<integer>0</integer>
+			<integer>3</integer>
+			<integer>1</integer>
+			<integer>1</integer>
+			<integer>0</integer>
+			<integer>1</integer>
+			<integer>1</integer>
+			<integer>1</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>1</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+		</array>
+		<key>LastBatteryPowerCustomSettings</key>
+		<array>
+			<integer>3</integer>
+			<integer>0</integer>
+			<integer>3</integer>
+			<integer>1</integer>
+			<integer>1</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>1</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>1</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+		</array>
+		<key>Options</key>
+		<dict>
+			<key>AC Power</key>
+			<dict>
+				<key>ProcessorSpeedTitle</key>
+				<string>Automatisch</string>
+			</dict>
+			<key>Battery Power</key>
+			<dict>
+				<key>ProcessorSpeedTitle</key>
+				<string>Minimal</string>
+			</dict>
+		</dict>
+		<key>ShowDetailsOnLaunch</key>
+		<string>YES</string>
+		<key>Sleep</key>
+		<dict>
+			<key>AC Power</key>
+			<dict>
+				<key>DisplaySleepsSeparate</key>
+				<string>NO</string>
+			</dict>
+			<key>Battery Power</key>
+			<dict>
+				<key>DisplaySleepsSeparate</key>
+				<string>YES</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>MultipleSessionEnabled</key>
+	<false/>
+	<key>com.apple.AppleModemSettingTool.LastCountryCode</key>
+	<string>DE</string>
+	<key>com.apple.TimeZonePref.Last_Selected_City</key>
+	<array>
+		<string>52.516666</string>
+		<string>13.400000</string>
+		<string>12</string>
+		<string>Europe/Berlin</string>
+		<string>DE</string>
+		<string>Berlin</string>
+		<string>Germany</string>
+		<string>Berlin</string>
+		<string>Deutschland</string>
+	</array>
+	<key>com.apple.audio.CoreAudio.DeviceSettings.AppleDBDMAAudioDMAEngine:0</key>
+	<dict>
+		<key>device 'isub' control on output channel 0</key>
+		<integer>1</integer>
+		<key>device 'mute' control on output channel 0</key>
+		<integer>1</integer>
+		<key>device 'ssrc' control on input channel 0</key>
+		<integer>1768778083</integer>
+		<key>device 'ssrc' control on output channel 0</key>
+		<integer>1769173099</integer>
+		<key>device 'thru' control on input channel 0</key>
+		<integer>0</integer>
+		<key>device 'volm' control on input channel 1</key>
+		<real>0.5</real>
+		<key>device 'volm' control on input channel 2</key>
+		<real>0.5</real>
+		<key>device 'volm' control on output channel 1</key>
+		<real>0.74640196561813354</real>
+		<key>device 'volm' control on output channel 2</key>
+		<real>0.74640196561813354</real>
+		<key>physical format for input stream 0</key>
+		<dict>
+			<key>bits per channel</key>
+			<integer>16</integer>
+			<key>bytes per frame</key>
+			<integer>4</integer>
+			<key>bytes per packet</key>
+			<integer>4</integer>
+			<key>channels per frame</key>
+			<integer>2</integer>
+			<key>format flags</key>
+			<integer>30</integer>
+			<key>format id</key>
+			<integer>1819304813</integer>
+			<key>frames per packet</key>
+			<integer>1</integer>
+			<key>sample rate</key>
+			<real>44100</real>
+		</dict>
+		<key>physical format for output stream 0</key>
+		<dict>
+			<key>bits per channel</key>
+			<integer>16</integer>
+			<key>bytes per frame</key>
+			<integer>4</integer>
+			<key>bytes per packet</key>
+			<integer>4</integer>
+			<key>channels per frame</key>
+			<integer>2</integer>
+			<key>format flags</key>
+			<integer>30</integer>
+			<key>format id</key>
+			<integer>1819304813</integer>
+			<key>frames per packet</key>
+			<integer>1</integer>
+			<key>sample rate</key>
+			<real>44100</real>
+		</dict>
+	</dict>
+	<key>com.apple.autologout.AutoLogOutDelay</key>
+	<integer>0</integer>
+	<key>com.apple.securitypref.logoutvalue</key>
+	<integer>3600</integer>
+</dict>
+</plist>

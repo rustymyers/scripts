@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>GroupName</key>
+	<string>wheel</string>
+	<key>Label</key>
+	<string>com.apple.RemoteDesktop.PrivilegeProxy</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.RemoteDesktop.PrivilegeProxy</key>
+		<true/>
+	</dict>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/System/Library/CoreServices/RemoteManagement/AppleVNCServer.bundle/Contents/Support/VNCPrivilegeProxy</string>
+	</array>
+	<key>UserName</key>
+	<string>root</string>
+</dict>
+</plist>

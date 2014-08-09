@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MacOSXInstallerComment</key>
+	<string>Note that we are hijacking this LaunchAgent and using it as a LaunchDaemon -- but only on the Mac OS X Installer media.</string>
+	<key>Label</key>
+	<string>com.apple.netauth.useragent</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.netauth.useragent</key>
+		<true/>
+	</dict>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/System/Library/CoreServices/NetAuthAgent.app/Contents/MacOS/NetAuthAgent</string>
+	</array>
+</dict>
+</plist>

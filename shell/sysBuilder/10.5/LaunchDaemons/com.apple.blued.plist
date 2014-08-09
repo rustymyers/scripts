@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>KeepAlive</key>
+	<dict>
+		<key>PathState</key>
+		<dict>
+			<key>/var/run/com.apple.blued.launchd</key>
+			<true/>
+			<key>/etc/rc.cdrom</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>Label</key>
+	<string>com.apple.BluedServer</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.BluetoothNILServer</key>
+		<true/>
+	</dict>
+	<key>Program</key>
+	<string>/usr/sbin/blued</string>
+</dict>
+</plist>

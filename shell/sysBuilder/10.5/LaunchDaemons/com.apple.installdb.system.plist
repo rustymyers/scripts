@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<!-- $Id: com.apple.installdb.system.plist,v 1.4 2007/03/08 01:26:46 pmb Exp $ -->
+<dict>
+	<key>Label</key>
+	<string>com.apple.installdb.system</string>
+
+	<key>Program</key>
+	<string>/System/Library/PrivateFrameworks/Install.framework/Resources/installdb</string>
+	
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.installdb.system</key>
+		<true/>
+	</dict>
+	
+	<key>ServiceIPC</key>
+	<true/>
+	
+	<key>UserName</key>
+	<string>_installer</string>
+	
+	<key>WorkingDirectory</key>
+	<string>/Library/Receipts/db</string>
+
+</dict>
+</plist>

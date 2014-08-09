@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.apple.netauth.sysagent</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.netauth.sysagent</key>
+		<true/>
+	</dict>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/System/Library/CoreServices/NetAuthAgent.app/Contents/Resources/NetAuthSysAgent</string>
+	</array>
+	<key>MachServiceLookupPolicies</key>
+	<dict>
+		<key>com.apple.windowserver</key>
+		<false/>
+		<key>com.apple.windowserver.active</key>
+		<false/>
+		<key>com.apple.windowserver.session</key>
+		<false/>
+	</dict>
+	<key>RunAtLoad</key>
+	<false/>
+	<key>KeepAlive</key>
+	<false/>
+</dict>
+</plist>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>Label</key>
+	<string>com.apple.audio.coreaudiod</string>
+	<key>ProgramArguments</key>
+	<array>
+<!--
+		<string>/usr/bin/sandbox-exec</string>
+		<string>-f</string>
+		<string>/usr/share/sandbox/com.apple.audio.coreaudiod.sb</string>
+-->
+		<string>/usr/sbin/coreaudiod</string>
+	</array>
+	<key>KeepAlive</key>
+	<false/>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.audio.coreaudiod</key>
+		<dict>
+			<key>ResetAtClose</key>
+			<true/>
+		</dict>
+		<key>com.apple.audio.audiohald</key>
+		<dict>
+			<key>ResetAtClose</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>UserName</key>
+	<string>_coreaudiod</string>
+	<key>GroupName</key>
+	<string>_coreaudiod</string>
+</dict>
+</plist>

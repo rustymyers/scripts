@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.apple.WindowServer</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/System/Library/Frameworks/ApplicationServices.framework/Frameworks/CoreGraphics.framework/Resources/WindowServer</string>
+		<string>-daemon</string>
+	</array>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.windowserver</key>
+		<true/>
+		<key>com.apple.windowserver.active</key>
+		<dict>
+			<key>HideUntilCheckIn</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

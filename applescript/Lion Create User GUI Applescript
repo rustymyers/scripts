@@ -1,0 +1,110 @@
+(*
+Credits
+-------
+
+CreateLionUser.pkg was written by Per Olofsson, per.olofsson@gu.se. It's based on createUser.pkg by Pete Akins, generatePasswordHash.py by Karl Kuehn, I've borrowed some PyObjC snippets from Greg Neagle and the graphic interface was created by Noel Barrachina Alonso
+
+Refer to description.rtfd inside de app for more info
+
+*)
+
+--get the user RealName
+repeat
+	set usr_realname to the text returned of (display dialog "Enter the new users RealName:" default answer "" buttons {"Cancel", "Next"} default button "Next" with title ("Create Lion User") with icon path to resource "users.icns" in bundle (path to me))
+	if usr_realname is not "" then exit repeat
+end repeat
+
+--get the user shortname
+repeat
+	set user_shortname to the text returned of (display dialog "Enter a shortname for " & usr_realname & ":" default answer "" buttons {"Cancel", "Next"} default button "Next" with title ("Create Lion User") with icon path to resource "users.icns" in bundle (path to me))
+	if user_shortname is not "" then exit repeat
+end repeat
+
+--get the UniqueID
+set user_uid to the text returned of (display dialog "Enter a UniqueID for " & usr_realname & ":" default answer "[optional]" buttons {"Cancel", "Next"} default button "Next" with title ("Create Lion User") with icon path to resource "users.icns" in bundle (path to me))
+
+--get the PrimaryGroupID
+set user_guid to the text returned of (display dialog "Enter a PrimaryGroupID for " & usr_realname & ":" default answer "[optional]" buttons {"Cancel", "Next"} default button "Next" with title ("Create Lion User") with icon path to resource "users.icns" in bundle (path to me))
+
+--select picture
+display dialog "Do you want to specify a picture for " & usr_realname & "?" buttons {"No", "Yes"} default button "No" with title ("Create Lion User") with icon path to resource "users.icns" in bundle (path to me)
+if result = {button returned:"Yes"} then
+	set pict_folder to (path to library folder as text) & "User Pictures"
+	set pict_folder to pict_folder as alias
+	set user_picture to choose file of type {"tif"} with prompt "Select the users picture" default location pict_folder
+	set user_picture to POSIX path of user_picture
+else
+	set user_picture to "/Library/User Pictures/Fun/Smack.tif"
+end if
+
+--select UserShell
+set user_shell to the text returned of (display dialog "Change the shell  if you like:" default answer "/bin/bash" buttons {"Cancel", "Next"} default button "Next" with title ("Create Lion User") with icon path to resource "users.icns" in bundle (path to me))
+
+--select NFSHomeDirectory
+set user_home to the text returned of (display dialog "Change the home folder location if you like:" default answer "/Users/" & user_shortname buttons {"Cancel", "Next"} default button "Next" with title ("Create Lion User") with icon path to resource "users.icns" in bundle (path to me))
+
+--select GeneratedUID
+set user_genuid to the text returned of (display dialog "Enter " & usr_realname & "'s GeneratedUID:" default answer "[optional]" buttons {"Cancel", "Next"} default button "Next" with title ("Create Lion User") with icon path to resource "users.icns" in bundle (path to me))
+
+--choose admin privileges
+display dialog "Do you want" & usr_realname & " to be local administrator?" buttons {"No", "Yes"} default button "No" with title ("Create Lion User") with icon path to resource "users.icns" in bundle (path to me)
+if result = {button returned:"Yes"} then
+	set is_admin to 1
+else
+	set is_admin to 0
+end if
+
+--choose to hide the user
+display dialog "Do you want " & usr_realname & " to be hidden?" buttons {"No", "Yes"} default button "No" with title ("Create Lion User") with icon path to resource "users.icns" in bundle (path to me)
+if result = {button returned:"Yes"} then
+	set is_hidden to 1
+else
+	set is_hidden to 0
+end if
+
+--choose to start ARD and give access
+display dialog "Do you want to enable ARD and give " & usr_realname & " access?" buttons {"No", "Yes"} default button "No" with title ("Create Lion User") with icon path to resource "users.icns" in bundle (path to me)
+if result = {button returned:"Yes"} then
+	set act_ard to 1
+else
+	set act_ard to 0
+end if
+
+--choose a password
+repeat
+	set user_password_one to the text returned of (display dialog "Enter the password for " & usr_realname default answer "" buttons {"Cancel", "Next"} default button "Next" with title ("Create Lion User") with icon (path to resource "users.icns" in bundle (path to me)) with hidden answer)
+	set user_password_two to the text returned of (display dialog "Please enter the same password again" default answer "" buttons {"Cancel", "Next"} default button "Next" with title ("Create Lion User") with icon (path to resource "users.icns" in bundle (path to me)) with hidden answer)
+	if user_password_one is equal to user_password_two and user_password_one is not "" then exit repeat
+end repeat
+--select destination folder
+set dest_folder to choose folder with prompt "Where do you want to save the .pkg?" default location path to home folder
+--auxiliar copy for the last renaming
+set dest_folder2 to dest_folder
+--using the resources within the app
+
+tell application "Finder" to copy file (path to resource "CreateLionUser.pkg" in bundle (path to me)) to folder dest_folder
+
+set dest_folder to POSIX path of dest_folder
+
+--writing values to plist
+do shell script "/usr/libexec/PlistBuddy -c 'Set RealName " & usr_realname & "' " & dest_folder & "CreateLionUser.pkg/Contents/Resources/userdata.plist"
+do shell script "/usr/libexec/PlistBuddy -c 'Set shortname " & user_shortname & "' " & dest_folder & "CreateLionUser.pkg/Contents/Resources/userdata.plist"
+if user_uid is not "[optional]" then
+	do shell script "/usr/libexec/PlistBuddy -c 'Add UniqueID integer " & user_uid & "' " & dest_folder & "CreateLionUser.pkg/Contents/Resources/userdata.plist"
+end if
+if user_guid is not "[optional]" then
+	do shell script "/usr/libexec/PlistBuddy -c 'Add PrimaryGroupID integer " & user_guid & "' " & dest_folder & "CreateLionUser.pkg/Contents/Resources/userdata.plist"
+end if
+do shell script "/usr/libexec/PlistBuddy -c 'Add Picture string " & user_picture & "' " & dest_folder & "CreateLionUser.pkg/Contents/Resources/userdata.plist"
+do shell script "/usr/libexec/PlistBuddy -c 'Add UserShell string " & user_shell & "' " & dest_folder & "CreateLionUser.pkg/Contents/Resources/userdata.plist"
+do shell script "/usr/libexec/PlistBuddy -c 'Set NFSHomeDirectory " & user_home & "' " & dest_folder & "CreateLionUser.pkg/Contents/Resources/userdata.plist"
+if user_genuid is not "[optional]" then
+	do shell script "/usr/libexec/PlistBuddy -c 'Add GeneratedUID string " & user_genuid & "' " & dest_folder & "CreateLionUser.pkg/Contents/Resources/userdata.plist"
+end if
+do shell script "/usr/libexec/PlistBuddy -c 'Set IsAdmin " & is_admin & "' " & dest_folder & "CreateLionUser.pkg/Contents/Resources/userdata.plist"
+do shell script "/usr/libexec/PlistBuddy -c 'Set IsHidden " & is_hidden & "' " & dest_folder & "CreateLionUser.pkg/Contents/Resources/userdata.plist"
+do shell script "/usr/libexec/PlistBuddy -c 'Add KickstartARD integer " & act_ard & "' " & dest_folder & "CreateLionUser.pkg/Contents/Resources/userdata.plist"
+do shell script "" & dest_folder & "CreateLionUser.pkg/Contents/Resources/hash_lion_password.py " & dest_folder & "CreateLionUser.pkg/Contents/Resources/userdata.plist " & user_password_one
+
+--renaming the final pkg
+tell application "Finder" to set name of file "CreateLionUser.pkg" in dest_folder2 to "Create." & user_shortname & ".User.Lion.pkg"

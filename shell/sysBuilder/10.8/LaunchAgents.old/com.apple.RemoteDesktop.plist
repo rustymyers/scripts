@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>KeepAlive</key>
+	<dict>
+		<key>PathState</key>
+		<dict>
+			<key>/etc/RemoteManagement.launchd</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>Label</key>
+	<string>com.apple.RemoteDesktop.agent</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.RemoteDesktop.agent</key>
+		<true/>
+	</dict>
+	<key>Program</key>
+	<string>/System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/MacOS/ARDAgent</string>
+</dict>
+</plist>

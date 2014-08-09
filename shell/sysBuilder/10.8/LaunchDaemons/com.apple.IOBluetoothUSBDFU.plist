@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.apple.IOBluetoothUSBDFU</string>
+	<key>LaunchOnlyOnce</key>
+	<true/>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.iokit.matching</key>
+		<dict>
+			<key>BluetoothFirmwareUpdate</key>
+			<dict>
+				<key>IOProviderClass</key>
+				<string>IOBluetoothUSBDFU</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/System/Library/Extensions/IOBluetoothFamily.kext/Contents/PlugIns/IOBluetoothUSBDFU.kext/Contents/Resources/IOBluetoothUSBDFUTool</string>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.apple.imklaunchagent</string>
+	<key>LimitLoadToSessionType</key>
+	<array>
+		<string>Aqua</string>
+		<string>LoginWindow</string>
+	</array>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.inputmethodkit.launcher</key>
+		<true/>
+		<key>com.apple.inputmethodkit.launchagent</key>
+		<true/>
+	</dict>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>Program</key>
+	<string>/System/Library/Frameworks/InputMethodKit.framework/Resources/imklaunchagent</string>
+</dict>
+</plist>

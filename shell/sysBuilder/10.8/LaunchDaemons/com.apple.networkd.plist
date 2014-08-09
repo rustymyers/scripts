@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>Label</key>
+	<string>com.apple.networkd</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.networkd</key>
+		<true/>
+	</dict>
+	<key>Program</key>
+	<string>/usr/libexec/networkd</string>
+	<key>POSIXSpawnType</key>
+	<string>Interactive</string>
+	<key>WatchPaths</key>
+	<array>
+		<string>/Library/Preferences</string>
+	</array>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.notifyd.matching</key>
+		<dict>
+			<key>com.apple.airport.userNotification</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.airport.userNotification</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>UserName</key>
+	<string>_networkd</string>
+	<key>GroupName</key>
+	<string>_networkd</string>
+</dict>
+</plist>

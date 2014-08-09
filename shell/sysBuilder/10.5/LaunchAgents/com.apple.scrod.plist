@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Label</key>
+        <string>com.apple.scrod</string>
+        <key>MachServices</key>
+        <dict>
+            <key>com.apple.scrod</key>
+            <dict>
+                <key>ResetAtClose</key>
+                <true/>
+            </dict>
+        </dict>
+        <key>ProgramArguments</key>
+        <array>
+            <string>/System/Library/PrivateFrameworks/ScreenReader.framework/Frameworks/ScreenReaderOutput.framework/Resources/scrod</string>
+        </array>
+        <key>LimitLoadToSessionType</key>
+        <array>
+            <string>Aqua</string>
+            <string>LoginWindow</string>
+        </array>
+    </dict>
+</plist>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AC Power</key>
+	<dict>
+		<key>Automatic Restart On Power Loss</key>
+		<integer>1</integer>
+		<key>Disk Sleep Timer</key>
+		<integer>0</integer>
+		<key>Display Sleep Timer</key>
+		<integer>0</integer>
+		<key>Sleep On Power Button</key>
+		<integer>0</integer>
+		<key>System Sleep Timer</key>
+		<integer>0</integer>
+		<key>Wake On AC Change</key>
+		<integer>0</integer>
+		<key>Wake On LAN</key>
+		<integer>1</integer>
+		<key>Wake On Modem Ring</key>
+		<integer>1</integer>
+	</dict>
+</dict>
+</plist>

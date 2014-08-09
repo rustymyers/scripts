@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>Label</key>
+	<string>com.apple.backupd</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.backupd</key>
+		<dict>
+			<key>ResetAtClose</key>
+			<true/>
+		</dict>
+		<key>com.apple.backupd-status</key>
+		<dict>
+			<key>HideUntilCheckin</key>
+			<true/>
+			<key>ResetAtClose</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>Program</key>
+	<string>/System/Library/CoreServices/backupd</string>
+	<key>RunAtLoad</key>
+	<false/>
+	<key>KeepAlive</key>
+	<false/>
+</dict>
+</plist>
