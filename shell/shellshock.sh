@@ -77,7 +77,7 @@ function package () {
 	# Create Package
 	####################################################################################################
 	# Generate Temp directory
-	package_root_tmp="$/tmp/ROOT"
+	package_root_tmp="/tmp/ROOT"
 	bin_root_tmp="${package_root_tmp}/bin/"
 
 	/bin/mkdir -p $bin_root_tmp
@@ -85,7 +85,10 @@ function package () {
 	# Copy  into package root
 	/bin/cp -pR /tmp/bash-fix/bash-92/build/Release/bash "$bin_root_tmp"
 	/bin/cp -pR /tmp/bash-fix/bash-92/build/Release/sh "$bin_root_tmp"
-
+	
+	# Set permissions
+	sudo chown root:wheel -R "${bin_root_tmp}"
+	sudo chmod 555 ${bin_root_tmp}bash ${bin_root_tmp}sh
 	# Remove old packages
 	if [[ -e "/tmp/bash-fix-CVE-2014-6271-CVE-2014-7168.pkg" ]]; then
 		/bin/rm -R "/tmp/bash-fix-CVE-2014-6271-CVE-2014-7168.pkg"
