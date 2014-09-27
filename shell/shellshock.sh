@@ -83,8 +83,8 @@ function package () {
 	/bin/mkdir -p $bin_root_tmp
 
 	# Copy  into package root
-	/bin/cp -pR /tmp/build/Release/bash "$bin_root_tmp"
-	/bin/cp -pR /tmp/build/Release/sh "$bin_root_tmp"
+	/bin/cp -pR /tmp/bash-fix/bash-92/build/Release/bash "$bin_root_tmp"
+	/bin/cp -pR /tmp/bash-fix/bash-92/build/Release/sh "$bin_root_tmp"
 
 	# Remove old packages
 	if [[ -e "/tmp/bash-fix-CVE-2014-6271-CVE-2014-7168.pkg" ]]; then
@@ -92,7 +92,7 @@ function package () {
 	fi
 
 	# Set output path for Package and create it
-	/usr/bin/pkgbuild --quiet --root "$package_root_tmp" --id edu.psu.bash.fix.CVE.2014.6271.CVE.2014.7168 "bash-fix-CVE-2014-6271-CVE-2014-7168.pkg"
+	/usr/bin/pkgbuild --quiet --root "$package_root_tmp" --id edu.psu.bash.fix.CVE.2014.6271.CVE.2014.7168 "/tmp/bash-fix-CVE-2014-6271-CVE-2014-7168.pkg"
 	open "/tmp/"
 
 }
@@ -108,8 +108,8 @@ function fix () {
 		sudo cp /bin/bash /bin/bash.old
 		sudo cp /bin/sh /bin/sh.old
 
-		sudo cp /tmp/build/Release/bash /bin
-		sudo cp /tmp/build/Release/sh /bin 	
+		sudo cp /tmp/bash-fix/bash-92/build/Release/bash /bin
+		sudo cp /tmp/bash-fix/bash-92/build/Release/sh /bin 	
 		echo "We've moved /bin/bash and /bin/sh to:"
 		echo "/bin/bash.old & /bin/sh.old"
 		echo "Restart to have the change take effect"
