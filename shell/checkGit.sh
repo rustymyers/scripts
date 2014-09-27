@@ -21,11 +21,12 @@
 # Version    : 1.0
 #--------------------------------------------------------------------------------------------------
 Recursive="OFF"
+SAFETY="ON"
 
-while getopts r opt; do
+while getopts rs opt; do
 	case "$opt" in
 		r) Recursive="ON";;
-#		a) variable="$OPTARG";;
+		s) SAFETY="OFF";;
 		h) 
 			help
 			exit 0;;
@@ -46,12 +47,15 @@ function checkGit () {
 				echo "$file = False"
 			fi
 		else
-			echo "${file}"
+			if [[ -e "$file"/.git ]]; then 
+				echo "$file = True"
+				cd  "$file/" && git status -s
+				git pull
+			fi
 		fi
 	done
 }
 
-SAFETY="ON"
 
 # Find git repos on system
 if [[ $Recursive == "ON" ]]; then
@@ -73,4 +77,4 @@ fi
 exit 0
 
 
-function checkGit () { for file in ./"${1}"*; do if [[ -e "$file"/.git ]]; then echo "$file = True"; else echo "$file = False"; fi; done }
+# function checkGit () { for file in ./"${1}"*; do if [[ -e "$file"/.git ]]; then echo "$file = True"; else echo "$file = False"; fi; done }
