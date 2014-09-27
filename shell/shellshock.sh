@@ -155,7 +155,7 @@ done
 
 echo -n "Enter your choice: "
 read UserOption
-echo "You Chose: ${UserOption:-help}"
+echo "You Chose: ${UserOption:=help}"
 
 case "$UserOption" in
 	"build" )
@@ -179,7 +179,9 @@ case "$UserOption" in
 	"try6271" )
 	echo "You Chose: $UserOption"
 	try6271;;
-	? )
+	"help" )
+	echo "Run this script to test & fix your system, build a new bash binary, or pacakage a binary for deployment."
+	* )
 	echo "You Chose: $UserOption"
 	echo "That's not an option, sir. I said Good Day, sir!"
 	exit;;
