@@ -139,7 +139,7 @@ function build () {
 	xcodebuild
 	build/Release/bash --version # GNU bash, version 3.2.53(1)-release
 	build/Release/sh --version   # GNU bash, version 3.2.53(1)-release
-	
+	open "/tmp/"
 }
 
 function buildFix () {
